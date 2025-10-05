@@ -77,7 +77,7 @@ OpenTDB - Trivia questions database
 Prerequisites
 Node.js (v18 or higher)
 
-MongoDB (local installation or MongoDB Atlas account)
+MongoDB (local installation or MongoDB Atlas account) and neon db 
 
 Git
 
@@ -85,8 +85,8 @@ Installation
 Clone the repository
 
 bash
-git clone https://github.com/UtkarshxDD/quiz-app-backend/
-cd quiz-app
+git clone  https://github.com/AK067CSE/quizapp-frontend and /quizapp-backend
+cd quizapp-frontend and /quizapp-frontend
 Backend Setup
 
 bash
@@ -95,7 +95,7 @@ npm install
 Frontend Setup
 
 bash
-cd ../client
+cd quiz-frontend
 npm install
 Environment Configuration
 
@@ -103,7 +103,7 @@ Create server/.env:
 
 text
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/quizapp
+DATABASE_URL
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
 Create client/.env.local:
@@ -170,13 +170,13 @@ Example API Usage
 Start Quiz:
 
 bash
-curl -X POST https://quiz-app-backend-2nnz.onrender.com/api/quiz/start \
+curl -X POST https://quizapp-backend-rgsi.onrender.com/api/quiz/start \
   -H "Content-Type: application/json" \
   -d '{"email":"user@example.com"}'
 Submit Answer:
 
 bash
-curl -X PUT https://quiz-app-backend-2nnz.onrender.com/api/quiz/question/{quizId}/0 \
+curl -X PUT https://quizapp-backend-rgsi.onrender.com/api/quiz/question/{quizId}/0 \
   -H "Content-Type: application/json" \
   -d '{"user_answer":"Paris","visited":true,"attempted":true}'
 🎮 How to Use
@@ -205,10 +205,10 @@ You can test the live API endpoints using the following commands:
 
 bash
 # Health Check
-curl https://quiz-app-backend-2nnz.onrender.com/api/health
+curl https://quizapp-backend-rgsi.onrender.com/api/health
 
 # Start a quiz
-curl -X POST https://quiz-app-backend-2nnz.onrender.com/api/quiz/start \
+curl -X POST https://quizapp-backend-rgsi.onrender.com/api/quiz/start \
   -H "Content-Type: application/json" \
   -d '{"email":"test@example.com"}'
 🎨 Design System
@@ -242,11 +242,11 @@ text
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 NODE_ENV=production
-FRONTEND_URL=https://quiz-app-frontend-eight-eta.vercel.app
+FRONTEND_URL=https://quizapp-frontend-lime.vercel.app/
 Frontend (.env.production)
 
 text
-REACT_APP_API_URL=https://quiz-app-backend-2nnz.onrender.com/api
+REACT_APP_API_URL=https://quizapp-backend-rgsi.onrender.com/api
 📈 Performance Optimizations
 Lazy Loading: Components loaded on demand
 
