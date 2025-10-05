@@ -2,12 +2,14 @@
 A modern, full-featured quiz application built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring a sleek tech-inspired dark theme.
 
 🔗 Repository Links
-Backend Repository: https://github.com/UtkarshxDD/quiz-app-backend
+Backend Repository: https://github.com/AK067CSE/quizapp-backend
+
+Frontend repository: https://github.com/AK067CSE/quizapp-frontend
 
 🚀 Live Demo
-Frontend: https://quiz-app-frontend-eight-eta.vercel.app
+Frontend: https://quizapp-frontend-lime.vercel.app
 
-Backend API: https://quiz-app-backend-2nnz.onrender.com
+Backend API: https://quizapp-backend-rgsi.onrender.com
 
 ✨ Features
 Core Functionality
